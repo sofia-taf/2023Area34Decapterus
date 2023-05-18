@@ -12,6 +12,8 @@ mkdir("model")
 
 stocks <- readRDS("data/input.rds")
 
+set.seed(1)
+
 ## Run model
 setwd("model")  # compile inside 'model' folder
 sfs <- safely(fit_sraplus)
